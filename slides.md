@@ -114,6 +114,9 @@ Em que $a_0, a_1, \dots, a_n$ são os coeficientes do polinômio, e \(x\) é a v
 É uma técnica que encontra um polinômio que melhor se ajusta aos dados, minimizando a diferença entre os valores observados e os preditos.
 </div>
 
+===============================================================================
+
+<!-- .slide: data-background-image="assets/texas.png" data-background-size="contain" data-background-color="#262626" -->
 
 ===============================================================================
 
