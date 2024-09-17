@@ -127,7 +127,6 @@ Em que $a_0, a_1, \dots, a_n$ são os coeficientes do polinômio, e \(x\) é a v
   <li class="fragment text-left">O polinômio é ajustado ao <b>campo total</b>, não ao campo <b>regional desconhecido</b></li>
   <li class="fragment text-left"><b>Polinômios de alta ordem</b> podem ajustar parte do campo residual</li>
   <li class="fragment text-left">Isso leva a <b>amplitudes</b> de resíduos <b>menores</b> do que as reais</li>
-
   <li class="fragment text-left">O método exige que a <b>soma</b> de todos os resíduos seja <b>zero</b></li>
   <li class="fragment text-left">Isso pode criar resíduos negativos espúrios no processo de ajuste</li>
 </ul>
@@ -138,11 +137,53 @@ Em que $a_0, a_1, \dots, a_n$ são os coeficientes do polinômio, e \(x\) é a v
 
 
 ===============================================================================
-<!-- .slide: data-background-image="assets/paper2.png" data-background-size="contain" data-background-color="#262626" -->
+<!-- .slide: data-background-image="assets/weights.png" data-background-size="contain" data-background-color="#262626" -->
+
+===============================================================================
+
+# Considerações
+
+
+
+<ul class="text-left">
+  <li class="fragment text-left">Novo método automático de separação regional-residual em dados gravimétricos</li>
+  <li class="fragment text-left">Permite o uso de polinômios de alta ordem sem incluir os resíduos, melhorando o ajuste do campo regional</li>
+  <li class="fragment text-left">Reduz a influência dos resíduos assumindo que anomalias isoladas apresentam o mesmo sinal</li>
+  <li class="fragment text-left">Produz resíduos mais precisos em amplitude, gradiente e tamanho comparado ao método tradicional</li>
+  <li class="fragment text-left">Supera métodos espectrais, que têm dificuldade com a sobreposição de espectros regional e residual</li>
+</ul>
+
+
+===============================================================================
+
+<!-- .slide: data-background-image="assets/paper1.png" data-background-size="contain" data-background-color="#262626" -->
+
 
 ===============================================================================
 
 
+# Resumo
+
+<ul class="text-left">
+  <li class="fragment text-left">Computer-Assisted Regional Residual Separation <b>(CARRS)</b></li>
+  <li class="fragment text-left">O <b>CARRS</b> simula operações dos antigos métodos gráficos com pouca intervenção do intérprete.</li>
+  <li class="fragment text-left">Utiliza <b>ajuste polinomial robusto</b> em pontos com baixo <b>gradiente horizontal</b> e <b>segunda derivada vertical</b></li>
+  <li class="fragment text-left">O ajuste polinomial de dados também é implementado com o método <b>LOWESS</b> (Locally Weighted Scatterplot Smoothing), que ajusta polinômios <b>localmente</b> para suavizar os dados</li>
+
+</ul>
+
+===============================================================================
+<!-- .slide: data-background-image="assets/mendonca-context.png" data-background-size="contain" data-background-color="#262626" -->
+
+
+===============================================================================
+<!-- .slide: data-background-image="assets/mendonca-maps.png" data-background-size="contain" data-background-color="#262626" -->
+
+
+===============================================================================
+<!-- .slide: data-background-image="assets/mendonca-profiles.png" data-background-size="contain" data-background-color="#262626" -->
+
+===============================================================================
 <div class="r-stretch centered">
 <div>
 
