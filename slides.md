@@ -65,8 +65,8 @@ Separação de componentes de larga escala de pequenas anomalias
 <div class="fragment text-left">
 
 - **Gráfico**
-  - Baseados na intuição e experiência do intérprete.
-  - Altamente subjetivo, mas permite insights geológicos.
+  - Baseados na intuição e experiência do intérprete
+  - Altamente subjetivo, mas permite insights geológicos
 
 </div>
  
@@ -75,10 +75,10 @@ Separação de componentes de larga escala de pequenas anomalias
 <div class="fragment text-left">
 
 - **Métodos espectrais**
-  - Separação quantitativa usando filtragem passa-baixa.
-  - Minimiza a subjetividade, mais rápido que os métodos gráficos.
-  - Erros: distorção de sinal e transmissão de ruído.
-  - Uso do filtro de Wiener para reduzir erros.
+  - Separação quantitativa usando filtragem passa-baixa
+  - Minimiza a subjetividade, mais rápido que os métodos gráficos
+  - Erros: distorção de sinal e transmissão de ruído
+  - Uso do filtro de Wiener para reduzir erros
 
 </div>
 
@@ -120,16 +120,28 @@ Em que $a_0, a_1, \dots, a_n$ são os coeficientes do polinômio, e \(x\) é a v
 
 ===============================================================================
 
+# Limitações do ajuste polinomial usando mínimos quadrados
+
+
+<ul class="text-left">
+  <li class="fragment text-left">O polinômio é ajustado ao <b>campo total</b>, não ao campo <b>regional desconhecido</b></li>
+  <li class="fragment text-left"><b>Polinômios de alta ordem</b> podem ajustar parte do campo residual</li>
+  <li class="fragment text-left">Isso leva a <b>amplitudes</b> de resíduos <b>menores</b> do que as reais</li>
+
+  <li class="fragment text-left">O método exige que a <b>soma</b> de todos os resíduos seja <b>zero</b></li>
+  <li class="fragment text-left">Isso pode criar resíduos negativos espúrios no processo de ajuste</li>
+</ul>
+
+
+===============================================================================
+<!-- .slide: data-background-image="assets/paper2.png" data-background-size="contain" data-background-color="#262626" -->
+
+
+===============================================================================
 <!-- .slide: data-background-image="assets/paper2.png" data-background-size="contain" data-background-color="#262626" -->
 
 ===============================================================================
 
-# Traduzindo o Abstract
-
-
-
-
-===============================================================================
 
 <div class="r-stretch centered">
 <div>
