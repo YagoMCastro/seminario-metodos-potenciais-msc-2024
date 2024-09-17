@@ -12,13 +12,10 @@ The reveal.js configuration can be found in index.html
 </div>
 
 <h1 id="talk-title">
-  A long talk title that may <br>be kind of boring and <br>more than one line long
+  Separação regional-residual utilizando ajuste polinomial
 </h1>
 <p id="talk-authors">
-  <a href="https://www.leouieda.com" id="talk-speaker">Leonardo Uieda</a>,
-  Author Two,
-  and
-  Author Three
+  <a>Yago M Castro</a>
 </p>
 
 <!-- Place location and date side-by-side with affiliation logos -->
@@ -26,13 +23,13 @@ The reveal.js configuration can be found in index.html
 <div class="col-large">
 
 <i class="fa fa-calendar-alt" style="margin: 0 10px 0 0"></i>
-XX Month 202X
+17 de Setembro de 2024
 <span style="margin: 0 20px"></span>
-Event/host of the talk
+Seminário  1 | Métodos Geofísicos de Exploração
 
 <!-- Permission to reuse and CC-BY license logo -->
 <i class="fa fa-camera" style="margin: 0 10px 0 0"></i>
-Feel free to screenshot/share/reuse this presentation
+Sinta-se à vontade para tirar capturas de tela/compartilhar/reutilizar esta apresentação
 <span style="margin: 0 20px"></span>
 <a href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons"></i><i class="fab fa-creative-commons-by" style="margin: 0 10px 0 2px"></i>CC-BY 4.0 License</a>
 
@@ -53,37 +50,81 @@ Feel free to screenshot/share/reuse this presentation
 
 ===============================================================================
 
-# Heading 1
+# O que é separação regional-residual?
 
-This is a slide with some content.
+<div class="quote dark fragment">
 
-## Heading 2
+Separação de componentes de larga escala de pequenas anomalias
 
-* Bla bla
-* Bla bla
-
-### Heading 3
-
-Meh meh meh meh meh meh meh meh meh meh meh meh meh meh meh meh meh meh meh meh
-meh meh.
+</div>
 
 ===============================================================================
 
-<div class="r-stretch">
+# Métodos de separação regional-residual
 
-# Some facts
+<div class="fragment text-left">
 
-About a certain topic.
-
-</div>
-<div class="footnote">
-
-This is a little footnote.
-Use it to add notes, citations, [links](https://www.leouieda.com/), etc.
-<br>
-Notice how the `div` above uses `r-stretch` to push this note to the bottom.
+- **Gráfico**
+  - Baseados na intuição e experiência do intérprete.
+  - Altamente subjetivo, mas permite insights geológicos.
 
 </div>
+ 
+</div>
+
+<div class="fragment text-left">
+
+- **Métodos espectrais**
+  - Separação quantitativa usando filtragem passa-baixa.
+  - Minimiza a subjetividade, mais rápido que os métodos gráficos.
+  - Erros: distorção de sinal e transmissão de ruído.
+  - Uso do filtro de Wiener para reduzir erros.
+
+</div>
+
+<div class="fragment text-left">
+
+- **Ajuste Polinomial**
+
+</div>
+
+===============================================================================
+
+# O que é um polinômio?
+
+<div class="quote dark fragment">
+
+$ P(x) = a_0 + a_1 x + a_2 x^2 + \dots + a_n x^n $
+
+</div>
+
+<div class="fragment text-left">
+
+Em que $a_0, a_1, \dots, a_n$ são os coeficientes do polinômio, e \(x\) é a variável independente.
+
+</div>
+
+
+
+===============================================================================
+# O que é ajuste polinomial?
+
+<div class="quote dark fragment">
+
+É uma técnica que encontra um polinômio que melhor se ajusta aos dados, minimizando a diferença entre os valores observados e os preditos.
+</div>
+
+
+===============================================================================
+
+<!-- .slide: data-background-image="assets/paper2.png" data-background-size="contain" data-background-color="#262626" -->
+
+===============================================================================
+
+# Traduzindo o Abstract
+
+
+
 
 ===============================================================================
 
@@ -325,23 +366,7 @@ Example of using PyGMT to make a map:
 This code:
 
 ```python
-import pygmt
-
-# Load built-in topography data
-grid = pygmt.datasets.load_earth_relief()
-
-fig = pygmt.Figure()
-# Pseudo-color map of topography
-fig.basemap(
-    region=[-150, -30, -60, 60],
-    projection="I-90/6i",
-    frame=True,
-)
-fig.grdimage(grid=grid, cmap="viridis")
-# Mask continents in dark grey
-fig.coast(land="#333333")
-# Display in Jupyter or pop-up window
-fig.show()
+a=b
 ```
 </div>
 <div class="col-medium fragment small">
