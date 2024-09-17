@@ -146,11 +146,11 @@ Em que $a_0, a_1, \dots, a_n$ são os coeficientes do polinômio, e \(x\) é a v
 
 
 <ul class="text-left">
-  <li class="fragment text-left">Novo método automático de separação regional-residual em dados gravimétricos</li>
-  <li class="fragment text-left">Permite o uso de polinômios de alta ordem sem incluir os resíduos, melhorando o ajuste do campo regional</li>
-  <li class="fragment text-left">Reduz a influência dos resíduos assumindo que anomalias isoladas apresentam o mesmo sinal</li>
-  <li class="fragment text-left">Produz resíduos mais precisos em amplitude, gradiente e tamanho comparado ao método tradicional</li>
-  <li class="fragment text-left">Supera métodos espectrais, que têm dificuldade com a sobreposição de espectros regional e residual</li>
+  <li class="fragment text-left">Novo método <b>automático</b> de separação regional-residual em dados gravimétricos</li>
+  <li class="fragment text-left">Permite o uso de <b>polinômios de alta ordem</b> sem incluir os resíduos, melhorando o ajuste do campo regional</li>
+  <li class="fragment text-left">Reduz a influência dos resíduos assumindo que <b>anomalias isoladas</b> apresentam o <b>mesmo sinal</b></li>
+  <li class="fragment text-left">Produz <b>resíduos mais precisos</b> em amplitude, gradiente e tamanho comparado ao método tradicional</li>
+  <li class="fragment text-left">Supera <b>métodos espectrais</b>, que têm dificuldade com a <b>sobreposição de espectros</b> regional e residual</li>
 </ul>
 
 
